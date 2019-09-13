@@ -26,7 +26,7 @@ function Home() {
                                     key={god.id}
                                     style={{ marginBottom: 20 }}
                                 >
-                                    <GodCard god={god} />
+                                    <GodCard key={god.id} god={god} />
                                 </Grid.Column>
                             ))}
                     </Transition.Group>

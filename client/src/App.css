@@ -6,3 +6,7 @@
 #cardlist li {
     margin: 10px;
 }
+
+.scaled {
+    transform: scale(0.8);
+}

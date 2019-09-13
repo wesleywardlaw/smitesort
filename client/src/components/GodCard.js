@@ -14,8 +14,12 @@ function GodCard({
         <Card fluid style={{ textTransform: 'uppercase' }}>
             <Card.Content>
                 <Image
+                    className="scaled"
                     size="massive"
-                    src={`/images/${name.toLowerCase()}.jpg`}
+                    src={`/images/${name
+                        .toLowerCase()
+                        .replace("'", '')
+                        .replace(/\s/g, '-')}.jpg`}
                 />
                 <Card.Header
                     style={{
@@ -33,7 +37,7 @@ function GodCard({
                     <li>{power}</li>
                     {traits.map(trait => {
                         {
-                            return <li>{trait}</li>;
+                            return <li key={trait}>{trait}</li>;
                         }
                     })}
                 </ul>
