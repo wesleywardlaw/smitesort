@@ -30,6 +30,9 @@ export const FETCH_GODS_QUERY = gql`
             description
             traits
             releaseNumber
+            likes {
+                username
+            }
         }
     }
 `;

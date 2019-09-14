@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom';
 // import moment from 'moment';
 
 import { AuthContext } from '../context/auth';
-// import LikeButton from './LikeButton';
+import LikeButton from './LikeButton';
 
 function GodCard({
-    god: { name, pantheon, role, attack, power, description, traits }
+    god: { name, pantheon, role, attack, power, description, traits, id, likes }
 }) {
+    // console.log(likes);
+    // console.log(id);
     const { user } = useContext(AuthContext);
     return (
         <Card fluid style={{ textTransform: 'uppercase' }}>
@@ -36,9 +38,7 @@ function GodCard({
                     <li>{attack}</li>
                     <li>{power}</li>
                     {traits.map(trait => {
-                        {
-                            return <li key={trait}>{trait}</li>;
-                        }
+                        return <li key={trait}>{trait}</li>;
                     })}
                 </ul>
 
@@ -46,9 +46,9 @@ function GodCard({
                     {description}
                 </Card.Description>
             </Card.Content>
-            {/* <Card.Content extra>
-                <LikeButton user={user} post={{ id, likes, likeCount }} />
-            </Card.Content> */}
+            <Card.Content extra>
+                <LikeButton user={user} god={{ id, likes }} />
+            </Card.Content>
         </Card>
     );
 }

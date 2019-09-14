@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 
 import 'semantic-ui-css/semantic.min.css';
-import styles from './App.css';
+import './App.css';
 
 import { AuthProvider } from './context/auth';
 import AuthRoute from './util/AuthRoute';
