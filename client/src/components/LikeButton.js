@@ -2,16 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-import { Button, Label, Icon } from 'semantic-ui-react';
+import { Button, Icon } from 'semantic-ui-react';
 
 import MyPopup from '../util/MyPopup';
 
 function LikeButton({ user, god: { id, likes } }) {
-    // console.log(props);
-    // console.log(likes);
     const [liked, setLiked] = useState(false);
-    // console.log(god);
-    // console.log(id);
+
     useEffect(() => {
         if (user && likes.find(like => like.username === user.username)) {
             setLiked(true);

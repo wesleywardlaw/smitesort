@@ -5,7 +5,6 @@ import { Grid, Transition } from 'semantic-ui-react';
 import { AuthContext } from '../context/auth';
 import GodCard from '../components/GodCard';
 import Filter from '../components/Filter';
-// import PostForm from '../components/PostForm';
 import { FETCH_GODS_QUERY } from '../util/graphql';
 
 function Home() {
@@ -13,8 +12,6 @@ function Home() {
     const [width, setWidth] = useState(window.innerWidth);
     const [filter, setFilter] = useState({ traits: [] });
     const [showlikes, setshowlikes] = useState(false);
-    // console.log(filter);
-    // console.log(filter.traits);
 
     const { loading, data, refetch } = useQuery(FETCH_GODS_QUERY, {
         fetchPolicy: 'cache-and-network',
@@ -29,6 +26,7 @@ function Home() {
         }
     });
 
+    //resizing the window changes width variable, which changes the number of columns
     const resizeWidth = () => {
         setWidth(window.innerWidth);
     };
@@ -37,6 +35,7 @@ function Home() {
         return () => window.removeEventListener('resize', resizeWidth);
     });
 
+    //separate array of likedGods to map over
     let likedGods;
     if (data && user) {
         likedGods = data.getGods.filter(god =>
@@ -44,11 +43,8 @@ function Home() {
         );
     }
 
-    let { traits } = filter;
-
     const change = newFilter => {
         setFilter(newFilter);
-
         refetch();
     };
 

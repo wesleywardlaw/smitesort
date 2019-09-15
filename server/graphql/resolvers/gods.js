@@ -6,8 +6,7 @@ module.exports = {
     Query: {
         async getGods(_, { filter }) {
             try {
-                //console.log(filter);
-                // console.log(filter.traits.length);
+                //if there is a filter and the filter has traits use the $all query
                 filter
                     ? filter.traits && filter.traits.length !== 0
                         ? (filter.traits = { $all: filter.traits })
@@ -15,6 +14,7 @@ module.exports = {
                     : '';
 
                 let god;
+                //if traits is empty and isn't the only property, then create a new filter without it
                 if (
                     filter &&
                     filter.traits &&
@@ -29,8 +29,6 @@ module.exports = {
                     god = await God.find();
                 }
 
-                console.log(god);
-                //.sort({ createdAt: -1 });
                 if (god.length > 0) {
                     return god;
                 } else {
@@ -40,49 +38,38 @@ module.exports = {
                 throw new Error(err);
             }
         }
-        // async getPost(_, { postId }) {
-        //     try {
-        //         const post = await Post.findById(postId);
-        //         if (post) {
-        //             return post;
-        //         } else {
-        //             throw new Error('Post not found');
-        //         }
-        //     } catch (err) {
-        //         throw new Error(err);
-        //     }
-        // }
     },
     Mutation: {
-        async createGod(
-            _,
-            {
-                name,
-                pantheon,
-                role,
-                attack,
-                power,
-                description,
-                traits,
-                releaseNumber
-            },
-            context
-        ) {
-            const newGod = new God({
-                name,
-                pantheon,
-                role,
-                attack,
-                power,
-                description,
-                traits,
-                releaseNumber
-            });
+        //createGod was for setup
+        // async createGod(
+        //     _,
+        //     {
+        //         name,
+        //         pantheon,
+        //         role,
+        //         attack,
+        //         power,
+        //         description,
+        //         traits,
+        //         releaseNumber
+        //     },
+        //     context
+        // ) {
+        //     const newGod = new God({
+        //         name,
+        //         pantheon,
+        //         role,
+        //         attack,
+        //         power,
+        //         description,
+        //         traits,
+        //         releaseNumber
+        //     });
 
-            const god = await newGod.save();
+        //     const god = await newGod.save();
 
-            return god;
-        },
+        //     return god;
+        // },
 
         async likeGod(_, { id }, context) {
             const { username } = checkAuth(context);

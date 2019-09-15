@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React from 'react';
 import { Button } from 'semantic-ui-react';
 
 const Filter = ({ change, filter, setshowlikes, user, showlikes }) => {
     const toggleTrait = toggled => {
         if (filter.traits && filter.traits.some(trait => trait === toggled)) {
             let newTraits = filter.traits.filter(trait => trait !== toggled);
-
             change({
                 ...filter,
                 traits: newTraits
@@ -53,11 +52,8 @@ const Filter = ({ change, filter, setshowlikes, user, showlikes }) => {
     ];
 
     const roles = ['Guardian', 'Warrior', 'Hunter', 'Mage', 'Assassin'];
+
     const renderAllClass = () => {
-        console.log(filter);
-        console.log(
-            filter.traits.length === 0 && Object.keys(filter).length === 1
-        );
         return filter.traits.length === 0 &&
             Object.keys(filter).length === 1 &&
             showlikes === false
@@ -132,7 +128,6 @@ const Filter = ({ change, filter, setshowlikes, user, showlikes }) => {
                         onClick={() => {
                             if (filter.pantheon === pantheon) {
                                 const { pantheon, ...newFilter } = filter;
-                                console.log(newFilter);
                                 change({ ...newFilter });
                             } else {
                                 change({ ...filter, pantheon: pantheon });

@@ -1,6 +1,5 @@
 const godsResolvers = require('./gods');
 const userResolvers = require('./users');
-// const commentsResolvers = require('./comments');
 
 module.exports = {
     Post: {
@@ -16,6 +15,5 @@ module.exports = {
     Mutation: {
         ...userResolvers.Mutation,
         ...godsResolvers.Mutation
-        // ...commentsResolvers.Mutation
     }
 };

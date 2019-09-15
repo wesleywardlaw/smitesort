@@ -1,0 +1,2425 @@
+const "high single target damage" = 'high single target damage';
+const "high mobility" = 'high mobility';
+const "high area damage" = 'high area damage';
+const "high movement speed" = 'high movement speed';
+const "high attack speed" = 'high attack speed';
+const "high sustain" = 'high sustain';
+const "great jungler" = 'great jungler';
+const "high crowd control" = 'high crowd control';
+const "medium crowd control" = 'medium crowd control';
+const "high defense" = 'high defense';
+const "medium area damage" = 'medium area damage';
+const "pusher" = '"pusher"';
+
+
+    mutation dog0 {
+        createGod(
+            name: "Achilles"
+            pantheon: "Greek"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "hero of the trojan war"
+            traits: ["high single target damage", "high mobility"]
+            releaseNumber: 94
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog1 {
+        createGod(
+            name: "Agni"
+            pantheon: "Hindu"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "god of fire"
+            traits: ["high area damage"]
+            releaseNumber: 1
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog2 {
+        createGod(
+            name: "Ah Muzen Cab"
+            pantheon: "Mayan"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "god of bees"
+            traits: ["high movement speed", "high attack speed"]
+            releaseNumber: 45
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog3 {
+        createGod(
+            name: "Ah Puch"
+            pantheon: "Mayan"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "horrific god of decay"
+            traits: ["high area damage"]
+            releaseNumber: 65
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog4 {
+        createGod(
+            name: "Amaterasu"
+            pantheon: "Japanese"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "the shining light"
+            traits: ["high area damage", "high mobility"]
+            releaseNumber: 72
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog5 {
+        createGod(
+            name: "Anhur"
+            pantheon: "Egyptian"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "slayer of enemies"
+            traits: ["high single target damage"]
+            releaseNumber: 20
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog6 {
+        createGod(
+            name: "Anubis"
+            pantheon: "Egyptian"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "god of the dead"
+            traits: ["high area damage"]
+            releaseNumber: 2
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog7 {
+        createGod(
+            name: "Ao Kuang"
+            pantheon: "Chinese"
+            role: "Mage"
+            attack: "melee"
+            power: "magical"
+            description: "dragon king of the eastern seas"
+            traits: ["high single target damage"]
+            releaseNumber: 60
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog8 {
+        createGod(
+            name: "Aphrodite"
+            pantheon: "Greek"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "goddess of beauty"
+            traits: ["high single target damage"]
+            releaseNumber: 32
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog9 {
+        createGod(
+            name: "Apollo"
+            pantheon: "Greek"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "god of music"
+            traits: ["high mobility"]
+            releaseNumber: 33
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog10 {
+        createGod(
+            name: "Arachne"
+            pantheon: "Greek"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the weaver"
+            traits: ["high single target damage", "great jungler"]
+            releaseNumber: 3
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog11 {
+        createGod(
+            name: "Ares"
+            pantheon: "Greek"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "god of war"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 23
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog12 {
+        createGod(
+            name: "Artemis"
+            pantheon: "Greek"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "goddess of the hunt"
+            traits: ["high single target damage"]
+            releaseNumber: 4
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog13 {
+        createGod(
+            name: "Artio"
+            pantheon: "Celtic"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "the bear goddess"
+            traits: ["high crowd control", "high sustain"]
+            releaseNumber: 90
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog14 {
+        createGod(
+            name: "Athena"
+            pantheon: "Greek"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "goddess of wisdom"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 37
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog15 {
+        createGod(
+            name: "Awilix"
+            pantheon: "Mayan"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "goddess of the moon"
+            traits: ["high single target damage", "high mobility"]
+            releaseNumber: 61
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog16 {
+        createGod(
+            name: "Bacchus"
+            pantheon: "Roman"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "god of wine"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 26
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog17 {
+        createGod(
+            name: "Bakasura"
+            pantheon: "Hindu"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the great devourer"
+            traits: ["high single target damage"]
+            releaseNumber: 19
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog18 {
+        createGod(
+            name: "Baron Samedi"
+            pantheon: "Voodoo"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "god of life and death"
+            traits: ["high crowd control", "high sustain", "medium area damage"]
+            releaseNumber: 96
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog19 {
+        createGod(
+            name: "Bastet"
+            pantheon: "Egyptian"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "goddess of cats"
+            traits: ["high single target damage"]
+            releaseNumber: 5
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog20 {
+        createGod(
+            name: "Bellona"
+            pantheon: "Roman"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "goddess of war"
+            traits: ["high defense"]
+            releaseNumber: 63
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog21 {
+        createGod(
+            name: "Cabrakan"
+            pantheon: "Mayan"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "destroyer of mountains"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 57
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog22 {
+        createGod(
+            name: "Camazotz"
+            pantheon: "Mayan"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "deadly god of bats"
+            traits: ["high sustain", "great jungler"]
+            releaseNumber: 81
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog23 {
+        createGod(
+            name: "Cerberus"
+            pantheon: "Greek"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "warden of the underworld"
+            traits: ["medium crowd control", "medium area damage"]
+            releaseNumber: 93
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog24 {
+        createGod(
+            name: "Cernunnos"
+            pantheon: "Celtic"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "the horned god"
+            traits: ["high area damage", "high crowd control"]
+            releaseNumber: 86
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog25 {
+        createGod(
+            name: "Chaac"
+            pantheon: "Mayan"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "god of rain"
+            traits: ["high sustain"]
+            releaseNumber: 47
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog26 {
+        createGod(
+            name: "Chang'e"
+            pantheon: "Chinese"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "faerie of the moon"
+            traits: ["high sustain", "high mobility"]
+            releaseNumber: 39
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog27 {
+        createGod(
+            name: "Chernobog"
+            pantheon: "Slavic"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "lord of darkness"
+            traits: ["high single target damage", "high attack speed"]
+            releaseNumber: 95
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog28 {
+        createGod(
+            name: "Chiron"
+            pantheon: "Greek"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "the great teacher"
+            traits: ["high sustain", "high movement speed"]
+            releaseNumber: 71
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog29 {
+        createGod(
+            name: "Chronos"
+            pantheon: "Greek"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "keeper of time"
+            traits: ["medium crowd control", "high mobility"]
+            releaseNumber: 38
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog30 {
+        createGod(
+            name: "Cu Chulainn"
+            pantheon: "Celtic"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "hound of ulster"
+            traits: ["high area damage", "high crowd control"]
+            releaseNumber: 89
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog31 {
+        createGod(
+            name: "Cupid"
+            pantheon: "Roman"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "god of love"
+            traits: ["high single target damage", "high sustain"]
+            releaseNumber: 21
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog32 {
+        createGod(
+            name: "Da Ji"
+            pantheon: "Chinese"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the nine-tailed fox"
+            traits: ["high single target damage"]
+            releaseNumber: 88
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog33 {
+        createGod(
+            name: "Discordia"
+            pantheon: "Roman"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "goddess of strife"
+            traits: ["high area damage"]
+            releaseNumber: 92
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog34 {
+        createGod(
+            name: "Erlang Shen"
+            pantheon: "Chinese"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "the illustrious sage"
+            traits: ["high single target damage", "high attack speed"]
+            releaseNumber: 78
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog35 {
+        createGod(
+            name: "Fafnir"
+            pantheon: "Norse"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "the lord of glittering gold"
+            traits: ["high defense", "high mobility"]
+            releaseNumber: 77
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog36 {
+        createGod(
+            name: "Fenrir"
+            pantheon: "Norse"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the unbound"
+            traits: ["high single target damage", "high mobility"]
+            releaseNumber: 35
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog37 {
+        createGod(
+            name: "Freya"
+            pantheon: "Norse"
+            role: "Mage"
+            attack: "melee"
+            power: "magical"
+            description: "queen of the valkyries"
+            traits: ["high area damage", "medium crowd control"]
+            releaseNumber: 24
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog38 {
+        createGod(
+            name: "Ganesha"
+            pantheon: "Hindu"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "god of success"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 87
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog39 {
+        createGod(
+            name: "Geb"
+            pantheon: "Egyptian"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "god of earth"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 48
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog40 {
+        createGod(
+            name: "Guan Yu"
+            pantheon: "Chinese"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "saint of war"
+            traits: ["high sustain", "high mobility"]
+            releaseNumber: 18
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog41 {
+        createGod(
+            name: "Hachiman"
+            pantheon: "Japanese"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "lord of the eight banners"
+            traits: ["high single target damage", "high mobility"]
+            releaseNumber: 91
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog42 {
+        createGod(
+            name: "Hades"
+            pantheon: "Greek"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "king of the underworld"
+            traits: ["high defense", "high sustain"]
+            releaseNumber: 6
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog43 {
+        createGod(
+            name: "He Bo"
+            pantheon: "Chinese"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "god of the yellow river"
+            traits: ["high area damage", "medium crowd control"]
+            releaseNumber: 7
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog44 {
+        createGod(
+            name: "Hel"
+            pantheon: "Norse"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "goddess of the underworld"
+            traits: ["high area damage", "high sustain"]
+            releaseNumber: 8
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog45 {
+        createGod(
+            name: "Hera"
+            pantheon: "Greek"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "queen of the gods"
+            traits: ["high area damage", "high crowd control"]
+            releaseNumber: 98
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog46 {
+        createGod(
+            name: "Hercules"
+            pantheon: "Roman"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "champion of rome"
+            traits: ["high single target damage", "high sustain"]
+            releaseNumber: 28
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog47 {
+        createGod(
+            name: "Horus"
+            pantheon: "Egyptian"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "the rightful heir"
+            traits: ["high defense", "high sustain"]
+            releaseNumber: 102
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog48 {
+        createGod(
+            name: "Hou Yi"
+            pantheon: "Chinese"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "defender of the earth"
+            traits: ["high area damage", "high single target damage"]
+            releaseNumber: 62
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog49 {
+        createGod(
+            name: "Hun Batz"
+            pantheon: "Mayan"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the howler monkey god"
+            traits: ["high single target damage"]
+            releaseNumber: 9
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog50 {
+        createGod(
+            name: "Isis"
+            pantheon: "Egyptian"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "goddess of magic"
+            traits: ["high area damage", "high crowd control"]
+            releaseNumber: 36
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog51 {
+        createGod(
+            name: "Izanami"
+            pantheon: "Japanese"
+            role: "hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "matron of the dead"
+            traits: ["high area damage", "pusher"]
+            releaseNumber: 80
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog52 {
+        createGod(
+            name: "Janus"
+            pantheon: "Roman"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "god of portals and transitions"
+            traits: ["high area damage", "high mobility"]
+            releaseNumber: 54
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog53 {
+        createGod(
+            name: "Jing Wei"
+            pantheon: "Chinese"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "the oathkeeper"
+            traits: ["high mobility"]
+            releaseNumber: 75
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog54 {
+        createGod(
+            name: "Jormungandr"
+            pantheon: "Norse"
+            role: "Guardian"
+            attack: "ranged"
+            power: "magical"
+            description: "the world serpent"
+            traits: ["high area damage"]
+            releaseNumber: 101
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog55 {
+        createGod(
+            name: "Kali"
+            pantheon: "Hindu"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "goddess of destruction"
+            traits: ["high single target damage", "high sustain"]
+            releaseNumber: 10
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog56 {
+        createGod(
+            name: "Khepri"
+            pantheon: "Egyptian"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "the dawn bringer"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 68
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog57 {
+        createGod(
+            name: "King Arthur"
+            pantheon: "Arthurian"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "wielder of excalibur"
+            traits: ["high area damage", "high crowd control"]
+            releaseNumber: 99
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog58 {
+        createGod(
+            name: "Kukulkan"
+            pantheon: "Mayan"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "serpent of the nine winds"
+            traits: ["high area damage", "pusher"]
+            releaseNumber: 11
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog59 {
+        createGod(
+            name: "Kumbhakarna"
+            pantheon: "Hindu"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "the sleeping giant"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 52
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog60 {
+        createGod(
+            name: "Kuzenbo"
+            pantheon: "Japanese"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "king kappa"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 85
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog61 {
+        createGod(
+            name: "Loki"
+            pantheon: "Norse"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the trickster god"
+            traits: ["high single target damage"]
+            releaseNumber: 25
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog62 {
+        createGod(
+            name: "Medusa"
+            pantheon: "Greek"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "the gorgon"
+            traits: ["high single target damage"]
+            releaseNumber: 64
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog63 {
+        createGod(
+            name: "Mercury"
+            pantheon: "Roman"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "messenger of the gods"
+            traits: ["high single target damage", "high mobility"]
+            releaseNumber: 43
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog64 {
+        createGod(
+            name: "Merlin"
+            pantheon: "Arthurian"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "the master wizard"
+            traits: ["high area damage"]
+            releaseNumber: 100
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog65 {
+        createGod(
+            name: "Ne Zha"
+            pantheon: "Chinese"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the third lotus prince"
+            traits: ["high single target damage", "medium crowd control"]
+            releaseNumber: 34
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog66 {
+        createGod(
+            name: "Neith"
+            pantheon: "Egyptian"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "weaver of fate"
+            traits: ["high crowd control", "high sustain"]
+            releaseNumber: 30
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog67 {
+        createGod(
+            name: "Nemesis"
+            pantheon: "Greek"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "goddess of vengeance"
+            traits: ["high mobility"]
+            releaseNumber: 49
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog68 {
+        createGod(
+            name: "Nike"
+            pantheon: "Greek"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "goddess of victory"
+            traits: ["high defense", "medium crowd control"]
+            releaseNumber: 83
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog69 {
+        createGod(
+            name: "Nox"
+            pantheon: "Roman"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "goddess of night"
+            traits: ["high crowd control"]
+            releaseNumber: 59
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog70 {
+        createGod(
+            name: "Nu Wa"
+            pantheon: "Chinese"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "guardian of heaven"
+            traits: ["pusher"]
+            releaseNumber: 46
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog71 {
+        createGod(
+            name: "Odin"
+            pantheon: "Norse"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "the allfather"
+            traits: ["high area damage", "high crowd control"]
+            releaseNumber: 12
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog72 {
+        createGod(
+            name: "Olorun"
+            pantheon: "Yoruba"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "ruler of the heavens"
+            traits: ["high attack speed"]
+            releaseNumber: 104
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+    mutation dog73 {
+        createGod(
+            name: "Osiris"
+            pantheon: "Egyptian"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "broken god of the afterlife"
+            traits: ["high defense", "high attack speed"]
+            releaseNumber: 53
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog74 {
+        createGod(
+            name: "Pele"
+            pantheon: "Polynesian"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "goddess of volcanoes"
+            traits: ["high single target damage"]
+            releaseNumber: 97
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog75 {
+        createGod(
+            name: "Persephone"
+            pantheon: "Greek"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "queen of the underworld"
+            traits: []
+            releaseNumber: 105
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog76 {
+        createGod(
+            name: "Poseidon"
+            pantheon: "Greek"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "god of the oceans"
+            traits: ["high area damage"]
+            releaseNumber: 31
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog77 {
+        createGod(
+            name: "Ra"
+            pantheon: "Egyptian"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "sun god"
+            traits: ["high sustain", "pusher"]
+            releaseNumber: 13
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog78 {
+        createGod(
+            name: "Raijin"
+            pantheon: "Japanese"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "master of thunder"
+            traits: ["pusher", "high mobility"]
+            releaseNumber: 73
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog79 {
+        createGod(
+            name: "Rama"
+            pantheon: "Hindu"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "seventh avatar of vishnu"
+            traits: ["high mobility", "high attack speed"]
+            releaseNumber: 55
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog80 {
+        createGod(
+            name: "Ratatoskr"
+            pantheon: "Norse"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the sly messenger"
+            traits: ["great jungler", "high mobility"]
+            releaseNumber: 66
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog81 {
+        createGod(
+            name: "Ravana"
+            pantheon: "Hindu"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "demon king of lanka"
+            traits: ["high single target damage", "high sustain"]
+            releaseNumber: 67
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog82 {
+        createGod(
+            name: "Scylla"
+            pantheon: "Greek"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "horror of the sea"
+            traits: ["high area damage"]
+            releaseNumber: 50
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog83 {
+        createGod(
+            name: "Serqet"
+            pantheon: "Egyptian"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "goddess of venom"
+            traits: ["high single target damage", "high mobility"]
+            releaseNumber: 56
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog84 {
+        createGod(
+            name: "Set"
+            pantheon: "Egyptian"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "the usurper"
+            traits: ["high single target damage"]
+            releaseNumber: 103
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+    mutation dog85 {
+        createGod(
+            name: "Skadi"
+            pantheon: "Norse"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "goddess of winter"
+            traits: ["high crowd control", "pusher"]
+            releaseNumber: 74
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog86 {
+        createGod(
+            name: "Sobek"
+            pantheon: "Egyptian"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "god of the nile"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 14
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog87 {
+        createGod(
+            name: "Sol"
+            pantheon: "Norse"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "goddess of the sun"
+            traits: ["high single target damage", "high mobility"]
+            releaseNumber: 70
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog88 {
+        createGod(
+            name: "Sun Wukong"
+            pantheon: "Chinese"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "the monkey king"
+            traits: ["high defense", "high mobility"]
+            releaseNumber: 44
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog89 {
+        createGod(
+            name: "Susano"
+            pantheon: "Japanese"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "god of the summer storm"
+            traits: ["high crowd control", "high mobility"]
+            releaseNumber: 76
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog90 {
+        createGod(
+            name: "Sylvanus"
+            pantheon: "Roman"
+            role: "Guardian"
+            attack: "ranged"
+            power: "magical"
+            description: "keeper of the wild"
+            traits: ["high crowd control", "high sustain"]
+            releaseNumber: 58
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog91 {
+        createGod(
+            name: "Terra"
+            pantheon: "Roman"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "the earth mother"
+            traits: ["high area damage", "high sustain"]
+            releaseNumber: 79
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog92 {
+        createGod(
+            name: "Thanatos"
+            pantheon: "Greek"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "hand of death"
+            traits: ["high sustain"]
+            releaseNumber: 42
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog93 {
+        createGod(
+            name: "The Morrigan"
+            pantheon: "Celtic"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "phantom queen"
+            traits: ["high area damage"]
+            releaseNumber: 84
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog94 {
+        createGod(
+            name: "Thor"
+            pantheon: "Norse"
+            role: "Assassin"
+            attack: "melee"
+            power: "physical"
+            description: "god of thunder"
+            traits: ["high single target damage", "medium crowd control"]
+            releaseNumber: 22
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog95 {
+        createGod(
+            name: "Thoth"
+            pantheon: "Egyptian"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "arbiter of the damned"
+            traits: ["high area damage"]
+            releaseNumber: 82
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog96 {
+        createGod(
+            name: "Tyr"
+            pantheon: "Norse"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "the lawgiver"
+            traits: ["high defense", "medium crowd control"]
+            releaseNumber: 40
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog97 {
+        createGod(
+            name: "Ullr"
+            pantheon: "Norse"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "the glorious one"
+            traits: ["high sustain"]
+            releaseNumber: 51
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog98 {
+        createGod(
+            name: "Vamana"
+            pantheon: "Hindu"
+            role: "Warrior"
+            attack: "melee"
+            power: "physical"
+            description: "fifth avatar of vishnu"
+            traits: ["high defense", "high sustain"]
+            releaseNumber: 15
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog99 {
+        createGod(
+            name: "Vulcan"
+            pantheon: "Roman"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "smith of the gods"
+            traits: ["high area damage", "pusher"]
+            releaseNumber: 29
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog100 {
+        createGod(
+            name: "Xbalanque"
+            pantheon: "Mayan"
+            role: "Hunter"
+            attack: "ranged"
+            power: "physical"
+            description: "hidden jaguar sun"
+            traits: ["high single target damage", "medium area damage"]
+            releaseNumber: 27
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog101 {
+        createGod(
+            name: "Xing Tian"
+            pantheon: "Chinese"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "the relentless"
+            traits: ["high crowd control"]
+            releaseNumber: 69
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog102 {
+        createGod(
+            name: "Ymir"
+            pantheon: "Norse"
+            role: "Guardian"
+            attack: "melee"
+            power: "magical"
+            description: "father of the frost giants"
+            traits: ["high crowd control", "high defense"]
+            releaseNumber: 16
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog103 {
+        createGod(
+            name: "Zeus"
+            pantheon: "Greek"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "god of the sky"
+            traits: ["high area damage"]
+            releaseNumber: 17
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+
+
+
+    mutation dog104 {
+        createGod(
+            name: "Zhong Kui"
+            pantheon: "Chinese"
+            role: "Mage"
+            attack: "ranged"
+            power: "magical"
+            description: "the demon queller"
+            traits: ["high area damage", "medium crowd control"]
+            releaseNumber: 41
+        ) {
+            id
+            name
+            pantheon
+            role
+            description
+            traits
+            releaseNumber
+        }
+    }
+

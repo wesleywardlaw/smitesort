@@ -1,20 +1,16 @@
 import React, { useContext } from 'react';
-import { Button, Card, Icon, Label, Image } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
-// import moment from 'moment';
-
+import { Card, Image } from 'semantic-ui-react';
 import { AuthContext } from '../context/auth';
 import LikeButton from './LikeButton';
 
 function GodCard({
     god: { name, pantheon, role, attack, power, description, traits, id, likes }
 }) {
-    // console.log(likes);
-    // console.log(id);
     const { user } = useContext(AuthContext);
     return (
         <Card fluid style={{ textTransform: 'uppercase' }}>
             <Card.Content>
+                {/* replace apostrophes with nothing and replace spaces with dashes so god names match image file names */}
                 <Image
                     className="scaled"
                     size="massive"
