@@ -1,23 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import { Grid, Transition } from 'semantic-ui-react';
 
-// import { AuthContext } from '../context/auth';
+import { AuthContext } from '../context/auth';
 import GodCard from '../components/GodCard';
 import Filter from '../components/Filter';
 // import PostForm from '../components/PostForm';
 import { FETCH_GODS_QUERY } from '../util/graphql';
 
 function Home() {
-    // const { user } = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
     const [width, setWidth] = useState(window.innerWidth);
     const [filter, setFilter] = useState({ traits: [] });
+    const [showlikes, setshowlikes] = useState(false);
     // console.log(filter);
     // console.log(filter.traits);
 
     const { loading, data, refetch } = useQuery(FETCH_GODS_QUERY, {
         fetchPolicy: 'cache-and-network',
         errorPolicy: 'ignore',
+        onError(error) {
+            console.log(error);
+        },
         variables: {
             traits: filter.traits,
             pantheon: filter.pantheon,
@@ -32,6 +36,13 @@ function Home() {
         window.addEventListener('resize', resizeWidth);
         return () => window.removeEventListener('resize', resizeWidth);
     });
+
+    let likedGods;
+    if (data && user) {
+        likedGods = data.getGods.filter(god =>
+            god.likes.some(like => like.username === user.username)
+        );
+    }
 
     let { traits } = filter;
 
@@ -60,18 +71,33 @@ function Home() {
                 ) : (
                     <>
                         <div style={{ width: '100%', textAlign: 'center' }}>
-                            <Filter change={change} filter={filter} />
+                            <Filter
+                                change={change}
+                                filter={filter}
+                                setshowlikes={setshowlikes}
+                                showlikes={showlikes}
+                                user={user}
+                            />
                         </div>
 
                         <Transition.Group>
-                            {data.getGods.map(god => (
-                                <Grid.Column
-                                    key={god.id}
-                                    style={{ marginBottom: 20 }}
-                                >
-                                    <GodCard god={god} />
-                                </Grid.Column>
-                            ))}
+                            {showlikes === false
+                                ? data.getGods.map(god => (
+                                      <Grid.Column
+                                          key={god.id}
+                                          style={{ marginBottom: 20 }}
+                                      >
+                                          <GodCard god={god} />
+                                      </Grid.Column>
+                                  ))
+                                : likedGods.map(god => (
+                                      <Grid.Column
+                                          key={god.id}
+                                          style={{ marginBottom: 20 }}
+                                      >
+                                          <GodCard god={god} />
+                                      </Grid.Column>
+                                  ))}
                         </Transition.Group>
                     </>
                 )}

@@ -10,3 +10,12 @@
 .scaled {
     transform: scale(1);
 }
+
+.ui.selected {
+    color: red;
+}
+
+.ui.button:focus {
+    color: #cacbcd;
+    background-color: #e0e1e2;
+}
