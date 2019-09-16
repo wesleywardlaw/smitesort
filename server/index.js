@@ -9,6 +9,10 @@ const resolvers = require('./graphql/resolvers');
 const pubsub = new PubSub();
 
 const server = new ApolloServer({
+    cors: {
+        origin: '*',
+        credentials: true
+    },
     typeDefs,
     resolvers,
     context: ({ req }) => ({ req, pubsub })
@@ -18,7 +22,7 @@ mongoose
     .connect(process.env.MONGODB, { useNewUrlParser: true })
     .then(() => {
         console.log('MongoDB Connected');
-        return server.listen({ port: 5000 });
+        return server.listen({ port: process.env.PORT });
     })
     .then(res => {
         console.log(`server running at  ${res.url}`);
