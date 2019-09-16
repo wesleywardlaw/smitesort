@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import { Grid, Transition } from 'semantic-ui-react';
+import { Grid, Transition, Responsive, Segment } from 'semantic-ui-react';
 
 import { AuthContext } from '../context/auth';
 import GodCard from '../components/GodCard';
@@ -26,7 +26,7 @@ function Home() {
         }
     });
 
-    //resizing the window changes width variable, which changes the number of columns
+    // resizing the window changes width variable, which changes the number of columns
     const resizeWidth = () => {
         setWidth(window.innerWidth);
     };
@@ -58,6 +58,7 @@ function Home() {
             </>
         );
     }
+    //width < 768 ? 1 : 3
 
     return (
         <Grid columns={width < 768 ? 1 : 3}>
@@ -66,7 +67,12 @@ function Home() {
                     <h1>Loading gods..</h1>
                 ) : (
                     <>
-                        <div style={{ width: '100%', textAlign: 'center' }}>
+                        <div
+                            style={{
+                                width: '100%',
+                                textAlign: 'center'
+                            }}
+                        >
                             <Filter
                                 change={change}
                                 filter={filter}
