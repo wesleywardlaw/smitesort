@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button } from 'semantic-ui-react';
 
-const Filter = ({ change, filter, setshowlikes, user, showlikes }) => {
+const Filter = ({ change, filter, setshowlikes, user, showlikes, refetch }) => {
     const toggleTrait = toggled => {
+        document.activeElement.blur();
         if (filter.traits && filter.traits.some(trait => trait === toggled)) {
             let newTraits = filter.traits.filter(trait => trait !== toggled);
             change({
@@ -82,6 +83,8 @@ const Filter = ({ change, filter, setshowlikes, user, showlikes }) => {
                 <Button
                     className={renderLikedClass()}
                     onClick={() => {
+                        // refetch();
+
                         setshowlikes(!showlikes);
                         document.activeElement.blur();
                     }}
@@ -100,7 +103,10 @@ const Filter = ({ change, filter, setshowlikes, user, showlikes }) => {
         <div>
             <Button
                 className={renderAllClass()}
-                onClick={() => change({ traits: [] })}
+                onClick={() => {
+                    document.activeElement.blur();
+                    change({ traits: [] });
+                }}
             >
                 All
             </Button>
@@ -126,6 +132,7 @@ const Filter = ({ change, filter, setshowlikes, user, showlikes }) => {
                         style={{ marginBottom: '10px' }}
                         key={pantheon}
                         onClick={() => {
+                            document.activeElement.blur();
                             if (filter.pantheon === pantheon) {
                                 const { pantheon, ...newFilter } = filter;
                                 change({ ...newFilter });
@@ -145,6 +152,7 @@ const Filter = ({ change, filter, setshowlikes, user, showlikes }) => {
                         style={{ marginBottom: '10px' }}
                         key={role}
                         onClick={() => {
+                            document.activeElement.blur();
                             if (filter.role === role) {
                                 const { role, ...newFilter } = filter;
                                 change({ ...newFilter });

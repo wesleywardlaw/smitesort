@@ -1,4 +1,4 @@
-import React, { useReducer, createContext } from 'react';
+import React, { useReducer, createContext, useState } from 'react';
 import jwtDecode from 'jwt-decode';
 
 const initialState = {
@@ -17,7 +17,8 @@ if (localStorage.getItem('jwtToken')) {
 const AuthContext = createContext({
     user: null,
     login: userData => {},
-    logout: () => {}
+    logout: () => {},
+    setshowlikes: () => {}
 });
 
 function authReducer(state, action) {
@@ -40,6 +41,7 @@ function authReducer(state, action) {
 
 function AuthProvider(props) {
     const [state, dispatch] = useReducer(authReducer, initialState);
+    const [showlikes, setshowlikes] = useState(false);
 
     function login(userData) {
         localStorage.setItem('jwtToken', userData.token);
@@ -51,11 +53,12 @@ function AuthProvider(props) {
 
     function logout() {
         localStorage.removeItem('jwtToken');
+        setshowlikes(false);
         dispatch({ type: 'LOGOUT' });
     }
     return (
         <AuthContext.Provider
-            value={{ user: state.user, login, logout }}
+            value={{ user: state.user, login, logout, showlikes, setshowlikes }}
             {...props}
         />
     );

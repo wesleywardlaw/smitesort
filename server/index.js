@@ -22,7 +22,7 @@ mongoose
     .connect(process.env.MONGODB, { useNewUrlParser: true })
     .then(() => {
         console.log('MongoDB Connected');
-        return server.listen({ port: process.env.PORT });
+        return server.listen({ port: 5000 });
     })
     .then(res => {
         console.log(`server running at  ${res.url}`);

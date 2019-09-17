@@ -35,6 +35,7 @@ module.exports = {
                     throw new Error('God not found');
                 }
             } catch (err) {
+                console.log(err);
                 throw new Error(err);
             }
         }

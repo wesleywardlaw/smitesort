@@ -1,23 +1,24 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import { Grid, Transition, Responsive, Segment } from 'semantic-ui-react';
+import { Grid, Transition } from 'semantic-ui-react';
 
 import { AuthContext } from '../context/auth';
 import GodCard from '../components/GodCard';
 import Filter from '../components/Filter';
 import { FETCH_GODS_QUERY } from '../util/graphql';
 
-function Home() {
-    const { user } = useContext(AuthContext);
+function Home(props) {
+    const { user, showlikes, setshowlikes } = useContext(AuthContext);
     const [width, setWidth] = useState(window.innerWidth);
     const [filter, setFilter] = useState({ traits: [] });
-    const [showlikes, setshowlikes] = useState(false);
+    // const [showlikes, setshowlikes] = useState(false);
 
-    const { loading, data, refetch } = useQuery(FETCH_GODS_QUERY, {
-        fetchPolicy: 'cache-and-network',
-        errorPolicy: 'ignore',
-        onError(error) {
-            console.log(error);
+    const { loading, data, refetch, error } = useQuery(FETCH_GODS_QUERY, {
+        // fetchPolicy: 'cache-and-network',
+        errorPolicy: 'all',
+
+        onError() {
+            // refetch();
         },
         variables: {
             traits: filter.traits,
@@ -37,7 +38,7 @@ function Home() {
 
     //separate array of likedGods to map over
     let likedGods;
-    if (data && user) {
+    if (data && data.getGods !== null && user) {
         likedGods = data.getGods.filter(god =>
             god.likes.some(like => like.username === user.username)
         );
@@ -45,14 +46,23 @@ function Home() {
 
     const change = newFilter => {
         setFilter(newFilter);
-        refetch();
     };
 
-    if (data && data.getGods === null) {
+    if (
+        (data && data.getGods === null) ||
+        (error && error.graphQLErrors[0].message)
+    ) {
         return (
             <>
                 <div style={{ width: '100%' }}>
-                    <Filter change={change} filter={filter} />
+                    <Filter
+                        change={change}
+                        filter={filter}
+                        showlikes={showlikes}
+                        setshowlikes={setshowlikes}
+                        user={user}
+                        refetch={refetch}
+                    />
                 </div>
                 <div>No gods match this search.</div>
             </>
@@ -79,27 +89,32 @@ function Home() {
                                 setshowlikes={setshowlikes}
                                 showlikes={showlikes}
                                 user={user}
+                                refetch={refetch}
                             />
                         </div>
 
                         <Transition.Group>
-                            {showlikes === false
-                                ? data.getGods.map(god => (
-                                      <Grid.Column
-                                          key={god.id}
-                                          style={{ marginBottom: 20 }}
-                                      >
-                                          <GodCard god={god} />
-                                      </Grid.Column>
-                                  ))
-                                : likedGods.map(god => (
-                                      <Grid.Column
-                                          key={god.id}
-                                          style={{ marginBottom: 20 }}
-                                      >
-                                          <GodCard god={god} />
-                                      </Grid.Column>
-                                  ))}
+                            {data && showlikes === false ? (
+                                data.getGods.map(god => (
+                                    <Grid.Column
+                                        key={god.id}
+                                        style={{ marginBottom: 20 }}
+                                    >
+                                        <GodCard god={god} />
+                                    </Grid.Column>
+                                ))
+                            ) : data && likedGods && likedGods.length !== 0 ? (
+                                likedGods.map(god => (
+                                    <Grid.Column
+                                        key={god.id}
+                                        style={{ marginBottom: 20 }}
+                                    >
+                                        <GodCard god={god} />
+                                    </Grid.Column>
+                                ))
+                            ) : (
+                                <span>No gods match this search.</span>
+                            )}
                         </Transition.Group>
                     </>
                 )}

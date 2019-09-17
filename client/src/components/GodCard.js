@@ -7,6 +7,7 @@ function GodCard({
     god: { name, pantheon, role, attack, power, description, traits, id, likes }
 }) {
     const { user } = useContext(AuthContext);
+
     return (
         <Card fluid style={{ textTransform: 'uppercase' }}>
             <Card.Content>
