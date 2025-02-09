@@ -7,7 +7,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import { setContext } from 'apollo-link-context';
 
 const httpLink = createHttpLink({
-    uri: 'https://smitesorter.herokuapp.com'
+    uri: process.env.REACT_APP_API_URL
 });
 
 const authLink = setContext(() => {
