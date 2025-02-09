@@ -41,36 +41,35 @@ module.exports = {
         }
     },
     Mutation: {
-        //createGod was for setup
-        // async createGod(
-        //     _,
-        //     {
-        //         name,
-        //         pantheon,
-        //         role,
-        //         attack,
-        //         power,
-        //         description,
-        //         traits,
-        //         releaseNumber
-        //     },
-        //     context
-        // ) {
-        //     const newGod = new God({
-        //         name,
-        //         pantheon,
-        //         role,
-        //         attack,
-        //         power,
-        //         description,
-        //         traits,
-        //         releaseNumber
-        //     });
+        async createGod(
+            _,
+            {
+                name,
+                pantheon,
+                role,
+                attack,
+                power,
+                description,
+                traits,
+                releaseNumber
+            },
+            context
+        ) {
+            const newGod = new God({
+                name,
+                pantheon,
+                role,
+                attack,
+                power,
+                description,
+                traits,
+                releaseNumber
+            });
 
-        //     const god = await newGod.save();
+            const god = await newGod.save();
 
-        //     return god;
-        // },
+            return god;
+        },
 
         async likeGod(_, { id }, context) {
             const { username } = checkAuth(context);
