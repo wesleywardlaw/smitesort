@@ -4,9 +4,15 @@ import { AuthContext } from '../context/auth';
 import LikeButton from './LikeButton';
 
 function GodCard({
-    god: { name, pantheon, role, attack, power, description, traits, id, likes }
+    god: { name, pantheon, role, attack, power, description, traits, id, likes } 
 }) {
     const { user } = useContext(AuthContext);
+    const imageName = name
+    .toLowerCase()
+    .replace("'", '')
+    .replace(/\s/g, '-')
+    const pngImages = ['achilles']
+    const isPngAvailable = pngImages.includes(imageName)
 
     return (
         <Card fluid style={{ textTransform: 'uppercase' }}>
@@ -15,10 +21,7 @@ function GodCard({
                 <Image
                     className="scaled"
                     size="massive"
-                    src={`/images/${name
-                        .toLowerCase()
-                        .replace("'", '')
-                        .replace(/\s/g, '-')}.jpg`}
+                    src={`/images/${imageName}.${isPngAvailable ? 'png' : 'jpg'}`}
                 />
                 <Card.Header
                     style={{
