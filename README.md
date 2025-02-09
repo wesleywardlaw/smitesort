@@ -6,4 +6,4 @@ The client is coded in React and uses Apollo Client to communicate with the grap
 
 Users can login and like gods to create a list of gods they like best.
 
-A working version is hosted at this [link](https://smitesorter.netlify.com/).
+A working version is hosted at this [link](https://smitesort.onrender.com/).
